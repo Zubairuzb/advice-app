@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+#root, body, html{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1531219572328-a0171b4448a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.advice{
+    width: 40%;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 3px 3px rgb(131, 112, 112);
+    padding: 50px;
+    background: rgb(238, 238, 238);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2{
+    font-size: 30px;
+    margin-bottom: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+    font-size: 14px;
+    width: 140px;
+    height: 40px;
+    background: #416165;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover{
+    background: #0B3948;
+    cursor: pointer;
+}
+
+h3{
+    font-size: 23px;
+}
+
+@media only screen and (max-width: 600px) {
+    .advice{
+        width: 70%;
+    }
 }
