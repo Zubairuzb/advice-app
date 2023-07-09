@@ -1,6 +1,7 @@
 #root, body, html{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .App{
@@ -16,11 +17,13 @@
 
 .advice{
     width: 40%;
+    height: 200px;
     text-align: center;
     border-radius: 30px;
     box-shadow: 3px 3px rgb(131, 112, 112);
     padding: 50px;
     background: rgb(238, 238, 238);
+    position: relative;
 }
 
 h2{
@@ -38,6 +41,9 @@ button{
     border-radius: 20px;
     margin-top: 20px;
     font-weight: 700;
+    position: absolute;
+    right: 40%;
+    bottom: 20px;
 }
 
 button:hover{

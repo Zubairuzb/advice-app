@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
-import './app.css';
+import './App.css';
 
 const App = () => {
   const [advice, setAdvice] = useState("");
